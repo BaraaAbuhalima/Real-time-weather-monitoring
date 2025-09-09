@@ -2,7 +2,7 @@
 
 public class ConsoleReader:IConsoleReader
 {
-    public string? Reader()
+    public string? Read()
     {
         return Console.ReadLine();
     }
