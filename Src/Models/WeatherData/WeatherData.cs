@@ -1,4 +1,4 @@
-﻿namespace Real_time_weather_monitoring.Modles;
+﻿namespace Real_time_weather_monitoring.Models;
 
 public class WeatherData
 {
