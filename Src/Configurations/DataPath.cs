@@ -9,4 +9,5 @@ public static class DataPath
         
     }
     public static readonly string WeatherData=ResolvePath("Data/WeatherData.txt");
+    public static readonly string BotsConfiguration=ResolvePath("BotsConfiguration.json");
 }
