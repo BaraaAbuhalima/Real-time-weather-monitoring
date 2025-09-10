@@ -1,6 +1,7 @@
-﻿namespace Real_time_weather_monitoring.IO.WeatherData;
+﻿using Real_time_weather_monitoring.Models.WeatherData;
+
 
 public interface IWeatherReader
 {
-    public string? Read();
+    public WeatherData? Read();
 }
