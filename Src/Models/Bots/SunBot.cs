@@ -1,13 +1,16 @@
-﻿namespace Real_time_weather_monitoring.Models.Bots;
+﻿using Real_time_weather_monitoring.Enums;
+
+namespace Real_time_weather_monitoring.Models.Bots;
 
 public class SunBot:BaseWeatherBot
 {
     
-    public SunBot(bool enabled, double threshold, string message)
+    public override BotDependency Depedency() => BotDependency.Temperature;
+    public override BotType WeatherBotType()=> BotType.Sun;
+    
+    public SunBot(WeatherBotConfiguration configuration)
     {
-        Enabled = enabled;
-        Threshold = threshold;
-        Message = message;
+        this.Configuration = configuration;
     }
     
 }
