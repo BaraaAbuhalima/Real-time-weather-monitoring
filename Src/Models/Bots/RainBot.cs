@@ -1,16 +1,17 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using Real_time_weather_monitoring.Enums;
 
 namespace Real_time_weather_monitoring.Models.Bots;
 
 public class RainBot:BaseWeatherBot
 {
+    public override BotDependency Depedency() => BotDependency.Humidity;
+    public override BotType WeatherBotType()=> BotType.Rain;
     
     [SetsRequiredMembers]
-    public RainBot(bool enabled, double threshold, string message)
+    public RainBot(WeatherBotConfiguration configuration)
     {
-        Enabled = enabled;
-        Threshold = threshold;
-        Message = message;
+        this.Configuration = configuration;
     }
-    
+
 }
