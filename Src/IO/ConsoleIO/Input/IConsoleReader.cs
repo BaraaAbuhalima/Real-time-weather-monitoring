@@ -2,5 +2,5 @@
 
 public interface IConsoleReader
 {
-    public string? Reader();
+    public string? Read();
 }
