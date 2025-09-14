@@ -1,4 +1,5 @@
-﻿namespace Real_time_weather_monitoring.IO.Input;
+﻿
+namespace Real_time_weather_monitoring.IO.FileIO.Input;
 
 public class FileFileReader : IFileReader
 {
