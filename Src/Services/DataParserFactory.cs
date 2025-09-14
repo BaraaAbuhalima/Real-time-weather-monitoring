@@ -6,17 +6,17 @@ namespace Real_time_weather_monitoring.Services;
 
 public static class DataParserFactory<T>
 {
-    private static DataParserContainer<T> _dataParserContainer =new DataParserContainer<T>();
+    private static readonly DataParserContainer<T> DataParserContainer =new DataParserContainer<T>();
     public static IDataParser<T> GetParser(DataFormat dataFormat)
     {
         if (dataFormat == DataFormat.JSON)
         {
-           return _dataParserContainer.GetWeatherParser<JSONParser<T>>();
+           return DataParserContainer.GetWeatherParser<JSONParser<T>>();
         }
 
         if (dataFormat == DataFormat.XML)
         {
-            return _dataParserContainer.GetWeatherParser<XmlParser<T>>();
+            return DataParserContainer.GetWeatherParser<XmlParser<T>>();
         }
         
         throw new NotImplementedException();
