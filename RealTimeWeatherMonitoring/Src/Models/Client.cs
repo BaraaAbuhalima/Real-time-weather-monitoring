@@ -18,16 +18,17 @@ public class Client
     }
     public void Run()
     {
-    var list=   WeatherBotsConfigurator.CreatBots();
-    var weatherBotsEventManager = new WeatherBotsEventManager();
-    foreach (var bot in list)
-    {
-        weatherBotsEventManager.Subscribe(bot);
-         
-    }
-
-    var weatherdata = WeatherReader.Read();
-    weatherBotsEventManager.Notify(weatherdata);
+    // var weatherBotConfigurator = new WeatherBotsConfigurator();
+    // var list=   weatherBotConfigurator.CreatBots();
+    // var weatherBotsEventManager = new WeatherBotsEventManager();
+    // foreach (var bot in list)
+    // {
+    //     weatherBotsEventManager.Subscribe(bot);
+    //      
+    // }
+    //
+    // var weatherdata = WeatherReader.Read();
+    // weatherBotsEventManager.Notify(weatherdata);
     }
     
 }

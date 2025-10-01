@@ -5,6 +5,7 @@ namespace Real_time_weather_monitoring.IO.WeatherDataIO;
 
 public class ConsoleWeatherReader: IWeatherReader
 {
+    
     private readonly IConsoleReader _consoleReader=new ConsoleReader();
     private readonly IConsoleWriter _consoleWriter=new ConsoleWriter();
     public Models.WeatherData.WeatherData? Read()

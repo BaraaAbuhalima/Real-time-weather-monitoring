@@ -5,13 +5,12 @@ using Real_time_weather_monitoring.Services;
 
 namespace Real_time_weather_monitoring.Parsers;
 
-public class BotsConfigurationParser
+public class WeatherBotsConfigurationParser:IWeatherBotsConfigurationParser
 {
     public Dictionary<string, WeatherBotConfiguration> Parse(string json)
     {
         try
         {
-
             var parser = DataParserFactory<Dictionary<string, WeatherBotConfiguration>>.GetParser(DataFormat.JSON);
             return parser.Parse(json);
         }
@@ -20,4 +19,9 @@ public class BotsConfigurationParser
             throw new Exception(e.Message);
         }
     }
+}
+
+public interface IWeatherBotsConfigurationParser
+{
+    public Dictionary<string, WeatherBotConfiguration> Parse(string json);
 }

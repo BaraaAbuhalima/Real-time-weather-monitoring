@@ -3,11 +3,11 @@ using Real_time_weather_monitoring.Models.Bots;
 
 namespace Real_time_weather_monitoring.Services;
 
-public static  class BotFactory
+public class WeatherBotFactory:IWeatherBotFactory
 {
     private static readonly string Namespace = "Real_time_weather_monitoring.Models.Bots";
 
-    public static BaseWeatherBot? CreateBot(string botName, WeatherBotConfiguration configuration)
+    public  BaseWeatherBot? CreateBot(string botName, WeatherBotConfiguration configuration)
     {
         var botType = Type.GetType($"{Namespace}.{botName}");
         if (botType == null || !typeof(BaseWeatherBot).IsAssignableFrom(botType))
@@ -17,4 +17,10 @@ public static  class BotFactory
            configuration
         )!;
     }
+}
+
+public interface IWeatherBotFactory
+{
+    public BaseWeatherBot? CreateBot(string botName, WeatherBotConfiguration configuration);
+    
 }
