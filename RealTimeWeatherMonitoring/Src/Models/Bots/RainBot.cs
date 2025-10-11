@@ -9,7 +9,7 @@ public class RainBot:BaseWeatherBot
     public override BotDependency Dependency => BotDependency.Humidity;
     
     [SetsRequiredMembers]
-    public RainBot(WeatherBotConfiguration configuration):base(configuration) 
+    public RainBot(IBaseWeatherBotConfiguration configuration):base(configuration) 
     {
     }
 

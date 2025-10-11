@@ -9,7 +9,7 @@ public class SnowBot:BaseWeatherBot
     public override BotDependency Dependency => BotDependency.Temperature;
     
     [SetsRequiredMembers]
-    public SnowBot(WeatherBotConfiguration configuration):base(configuration) 
+    public SnowBot(IBaseWeatherBotConfiguration configuration):base(configuration) 
     {
     }
     

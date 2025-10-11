@@ -1,6 +1,6 @@
 ﻿namespace RealTimeWeatherMonitoring.Models;
 
-public class WeatherBotConfiguration:IBotConfiguration
+public class WeatherBotConfiguration:IBaseWeatherBotConfiguration
 {
     public required bool Enabled { get; set; }
     public  required double Threshold { get; set; }

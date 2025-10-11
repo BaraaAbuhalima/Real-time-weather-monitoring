@@ -10,9 +10,9 @@ public abstract class BaseWeatherBot:IBot,IEventListener <WeatherData>
 
     public abstract BotDependency Dependency { get;  }
 
-    public required WeatherBotConfiguration Configuration { get; set; }
+    public required IBaseWeatherBotConfiguration Configuration { get; set; }
 
-    protected BaseWeatherBot(WeatherBotConfiguration configuration)
+    protected BaseWeatherBot(IBaseWeatherBotConfiguration configuration)
     {
         Configuration = configuration;
     }

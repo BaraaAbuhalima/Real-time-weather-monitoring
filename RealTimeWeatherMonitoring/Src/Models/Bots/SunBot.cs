@@ -9,7 +9,7 @@ public class SunBot:BaseWeatherBot
     public override BotDependency Dependency => BotDependency.Temperature;
 
     
-    public SunBot(WeatherBotConfiguration configuration) :base(configuration) 
+    public SunBot(IBaseWeatherBotConfiguration configuration) :base(configuration) 
     {
 
     }
