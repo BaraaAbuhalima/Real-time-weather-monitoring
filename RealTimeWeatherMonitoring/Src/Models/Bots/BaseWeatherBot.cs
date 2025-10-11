@@ -5,19 +5,19 @@ using RealTimeWeatherMonitoring.Utils;
 
 namespace RealTimeWeatherMonitoring.Models.Bots;
 
-public abstract class BaseWeatherBot:IBot,IEventListener <WeatherData>
+public abstract class BaseWeatherBot:IBot,IEventListener <IWeatherData>
 {
 
     public abstract BotDependency Dependency { get;  }
 
     public required IBaseWeatherBotConfiguration Configuration { get; set; }
 
-    protected BaseWeatherBot(IBaseWeatherBotConfiguration configuration)
+    public BaseWeatherBot(IBaseWeatherBotConfiguration configuration)
     {
         Configuration = configuration;
     }
 
-    public void Update(WeatherData weatherData)
+    public virtual void Update(IWeatherData weatherData)
     {
         
         if (!Configuration.Enabled)

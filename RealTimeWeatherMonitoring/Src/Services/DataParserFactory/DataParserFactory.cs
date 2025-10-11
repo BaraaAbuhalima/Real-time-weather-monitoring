@@ -4,14 +4,14 @@ namespace RealTimeWeatherMonitoring.Services;
 
 public class DataParserFactory<T>:IDataParserFactory<T>
 {
-    public IDataParser<T> Create(DataFormat dataFormat)
+    public IDataParser<T> Create(ParserType parserType)
     {
-        if (dataFormat == DataFormat.Json)
+        if (parserType == ParserType.Json)
         {
            return new JsonParser<T>();
         }
 
-        if (dataFormat == DataFormat.Xml)
+        if (parserType == ParserType.Xml)
         {
             return new XmlParser<T>();
         }

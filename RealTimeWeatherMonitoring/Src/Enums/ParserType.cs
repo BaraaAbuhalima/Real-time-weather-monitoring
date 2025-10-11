@@ -1,6 +1,6 @@
 ﻿namespace RealTimeWeatherMonitoring.Enums;
 
-public enum DataFormat
+public enum ParserType
 {
     Json,
     Xml

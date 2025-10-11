@@ -6,7 +6,7 @@ namespace RealTimeWeatherMonitoring.Services;
 
 public  static class WeatherBotDependencyResolver
 {
-    public static double GetThreshold(BaseWeatherBot bot ,WeatherData data)
+    public static double GetThreshold(BaseWeatherBot bot ,IWeatherData data)
     {
         if (bot.Dependency == BotDependency.Humidity)
         {

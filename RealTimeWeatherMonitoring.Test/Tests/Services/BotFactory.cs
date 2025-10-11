@@ -8,20 +8,17 @@ namespace RealTimeWeatherMonitoring.Test.Tests.Services;
 
 public class BotFactoryTest
 {
-    private IBotFactory<BaseWeatherBot> BotFactory { get; init; }
-
-    public BotFactoryTest()
-    {
-        BotFactory = new BotFactory<BaseWeatherBot>();
-    }
+   
     [Theory]
     [InlineData("RainBot")]
     [InlineData("SunBot")]
     [InlineData("SnowBot")]
     public void CreateWeatherBotWithValidBotNameAndConfigurations(string botName)
     {
+        
         var config = new Mock<IBaseWeatherBotConfiguration>();
-        var createdBot= BotFactory.Create(botName, config.Object);
+        var botFactory = new BotFactory<BaseWeatherBot>();
+        var createdBot= botFactory.Create(botName, config.Object);
         createdBot.Should().NotBeNull();
     }
 

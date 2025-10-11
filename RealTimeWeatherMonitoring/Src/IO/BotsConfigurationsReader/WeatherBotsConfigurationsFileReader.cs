@@ -10,7 +10,7 @@ namespace RealTimeWeatherMonitoring.IO.BotsConfigurationsIO;
 public class WeatherBotsConfigurationsFileReader:IBotsConfigurationsReader
 {
     private readonly FileReader _fileReader;
-    private const DataFormat Format = DataFormat.Json;
+    private const ParserType Format = ParserType.Json;
 
     private readonly IDataParser<Dictionary<string,WeatherBotConfiguration>> _parser;
     

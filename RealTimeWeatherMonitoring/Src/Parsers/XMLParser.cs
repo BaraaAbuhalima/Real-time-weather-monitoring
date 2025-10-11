@@ -1,4 +1,5 @@
 ﻿using System.Xml.Serialization;
+using RealTimeWeatherMonitoring.Enums;
 
 namespace RealTimeWeatherMonitoring.Parsers;
 

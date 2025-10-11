@@ -1,6 +1,6 @@
 ﻿namespace RealTimeWeatherMonitoring.Models;
 
-public class WeatherData
+public class WeatherData:IWeatherData
 {
 
     public string Location { get; set; }

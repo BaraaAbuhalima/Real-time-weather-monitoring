@@ -12,7 +12,7 @@ public class WeatherDataConfigurationFileReader: IWeatherDataConfigurationReader
 {
     private IReader Reader { get; }
     private static string _filePath = DataPath.WeatherData;
-    private const DataFormat Format = DataFormat.Json;
+    private const ParserType Format = ParserType.Json;
     public WeatherDataConfigurationFileReader(string filePath)
     {
         Reader=new FileReader(filePath);

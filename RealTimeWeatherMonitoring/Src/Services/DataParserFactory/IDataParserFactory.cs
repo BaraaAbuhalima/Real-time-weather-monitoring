@@ -5,5 +5,5 @@ namespace RealTimeWeatherMonitoring.Services;
 
 public interface IDataParserFactory<out T>
 {
-    public IDataParser<T> Create(DataFormat dataFormat);
+    public IDataParser<T> Create(ParserType parserType);
 }
