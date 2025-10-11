@@ -6,5 +6,6 @@
     &lt;TestId&gt;xUnit::2CB4B32A-CC5E-4555-BAD4-B0C44219DA39::net9.0::RealTimeWeatherMonitoring.Test.Tests.Services.BotFactoryTest.CreateWeatherBotWithValidBotNameAndConfigurations&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::2CB4B32A-CC5E-4555-BAD4-B0C44219DA39::net9.0::RealTimeWeatherMonitoring.Test.Tests.Services.EventManagerTests.NotifyingWeatherBotsWithWeatherEventsAndWeatherDataToCheckIfItNotifyTheBot&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::2CB4B32A-CC5E-4555-BAD4-B0C44219DA39::net9.0::RealTimeWeatherMonitoring.Test.Tests.Services.EventManagerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::2CB4B32A-CC5E-4555-BAD4-B0C44219DA39::net9.0::RealTimeWeatherMonitoring.Test.Tests.Services.WeatherActionsTests.ReadingWeatherUsingIDataConfigurationReaderToCheckIfItReadItAndNotifyTheSubscribers&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -5,13 +5,13 @@ using RealTimeWeatherMonitoring.Services;
 
 namespace RealTimeWeatherMonitoring.Models;
 
-public class WeatherActions
+public class WeatherActions:IWeatherActions
 {
-    public EventManager<WeatherEvent, BaseWeatherBot, WeatherData> Events { get; set; }
+    public IEventManager<WeatherEvent, BaseWeatherBot, IWeatherData> Events { get; set; }
 
     public WeatherActions()
     {
-        Events = new EventManager<WeatherEvent, BaseWeatherBot, WeatherData>();
+        Events = new EventManager<WeatherEvent, BaseWeatherBot, IWeatherData>();
     }
     
     public void ReadWeather(IWeatherDataConfigurationReader  reader)
@@ -20,3 +20,4 @@ public class WeatherActions
         Events.Notify(WeatherEvent.Reading, weatherData);
     }
 }
+

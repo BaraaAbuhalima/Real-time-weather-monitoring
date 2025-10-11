@@ -2,7 +2,7 @@
 
 namespace RealTimeWeatherMonitoring.Services;
 
-public class EventManager<TEventType,TSubscriber,TData> 
+public class EventManager<TEventType,TSubscriber,TData> : IEventManager<TEventType,TSubscriber,TData>
     where TSubscriber: IEventListener<TData>
     where TEventType : notnull
 {
