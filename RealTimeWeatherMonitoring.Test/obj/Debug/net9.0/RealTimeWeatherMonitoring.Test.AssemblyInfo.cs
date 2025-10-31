@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RealTimeWeatherMonitoring.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9c580842663b7e69b04e580eeaf76adcf40120b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8e7b0b3c977153abb550e730c5bd2f186b9369e")]
 [assembly: System.Reflection.AssemblyProductAttribute("RealTimeWeatherMonitoring.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RealTimeWeatherMonitoring.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
